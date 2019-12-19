@@ -69,4 +69,26 @@ Multi label model prediction|  Multi output model prediction
 ![GitHub Logo](output/ex1.PNG)  |  ![GitHub Logo](output/ex2.PNG)
 
 In the prediction images, Multi label model can not predict the **black dress** properly. Because, it never see anything like this.
-But Multi output model can predict **black dress**. Because this model learn the cloths type and color separately
+But Multi output model can predict **black dress**. Because this model learn the cloths type and color separately.
+
+## Commands to train and predict the model
+
+### Multi label model
+To train the model:
+  - python train.py --dataset dataset --model fashion.model --labelbin mlb.pickle
+  
+To use the trained model to predict any image:
+  - python classify.py --model fashion.model --labelbin mlb.pickle  --image ../examples/black_dress.jpg
+  
+### Multi output model
+To train the model:
+  - <pre>python train.py --dataset ../dataset\
+                    --model output/fashion.model\
+                    --categorybin output/category_lb.pickle\
+                    --colorbin output/color_lb.pickle</pre>
+  
+To use the trained model to predict any image:
+  - <pre>python classify.py --model output/fashion.model\
+                       --categorybin output/category_lb.pickle\
+                       --colorbin output/color_lb.pickle\
+                       --image ../examples/black_dress.jpg</pre>
