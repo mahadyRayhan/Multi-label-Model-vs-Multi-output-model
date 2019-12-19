@@ -52,7 +52,7 @@ So for **color** prediction branch:
   - Input: a rgb scale image (256x256x3)
   - Label: one hot array with length three (three different colors)
 
-<h3>Why we use Multi output model when Multi label model can perform the same task???</h3>
+### Why we use Multi output model when Multi label model can perform the same task???
 
 **The Ans is:**
 
