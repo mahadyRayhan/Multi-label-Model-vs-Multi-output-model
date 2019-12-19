@@ -56,11 +56,11 @@ So for **color** prediction branch:
 
 **The Ans is:**
 
-Multi label model can only classify the combination which I use to train the model. That means, Multi label model can only identify  "black jeans", "blue jeans", "blue dress", "red dress", "blue shirt", "red shirt", "black shoes" classes. It can not identify **""black dress"** because there is no **black dress** class exist in the training classes.
+Multi label model can only classify the combination which I use to train the model. That means, Multi label model can only identify  "black jeans", "blue jeans", "blue dress", "red dress", "blue shirt", "red shirt", "black shoes" classes. It can not identify **"black dress"** because there is no **black dress** class exist in the training classes.
 
-On the other hand, Multi output model can identify **""black dress"**. 
+On the other hand, Multi output model can identify **"black dress"**. 
 
-The reason **Multi output model** can identify the **""black dress"** is, Multi output model learn cloth type and color separately. So Multi output model can identify any combination of four different dress and three different colors.
+The reason **Multi output model** can identify the **"black dress"** is, Multi output model learn cloth type and color separately. So Multi output model can identify any combination of four different dress and three different colors.
 
 Here is an example:
 
