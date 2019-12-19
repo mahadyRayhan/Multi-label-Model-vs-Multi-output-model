@@ -1,0 +1,4 @@
+Performing multi-label classification with Keras is straightforward and includes two primary steps:
+
+1. Replace the softmax activation at the end of your network with a sigmoid activation
+2. Swap out categorical cross-entropy for binary cross-entropy for your loss function
