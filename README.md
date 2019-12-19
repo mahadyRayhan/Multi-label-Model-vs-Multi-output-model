@@ -36,6 +36,8 @@ As i have to classify two different type of class (color and cloth type) i use a
  
 Here is a demo pic of the model.
 
+![GitHub Logo](output/Multi-output-Branching.png)
+
 When we train the multi output model for our data
   - one branch will predict the color of the dress
   - another branch will predict the type of the cloths
@@ -61,3 +63,10 @@ On the other hand, Multi output model can identify **""black dress"**.
 The reason **Multi output model** can identify the **""black dress"** is, Multi output model learn cloth type and color separately. So Multi output model can identify any combination of four different dress and three different colors.
 
 Here is an example:
+
+Multi label model prediction|  Multi output model prediction
+:--------------------------:|:-------------------------:
+![GitHub Logo](output/ex1.PNG)  |  ![GitHub Logo](output/ex2.PNG)
+
+In the prediction images, Multi label model can not predict the **black dress** properly. Because, it never see anything like this.
+But Multi output model can predict **black dress**. Because this model learn the cloths type and color separately
